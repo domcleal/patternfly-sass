@@ -112,11 +112,11 @@ class Converter
 
     file = replace_all(file, "@import \"../components/font-awesome/less/variables\";\n", '')
     file = replace_all(file, '../components/font-awesome/less/font-awesome', 'font-awesome')
-    file = replace_all(file, '../components/bootstrap-combobox/less/combobox', 'bootstrap-combobox')
-    file = replace_all(file, '../components/bootstrap-select/less/bootstrap-select', 'bootstrap-select')
-    file = replace_all(file, '../components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css', 'bootstrap-touchspin/dist/jquery.bootstrap-touchspin')
+    file = replace_all(file, '../components/bootstrap-combobox/less/combobox', 'patternfly/bootstrap-combobox')
+    file = replace_all(file, '../components/bootstrap-select/less/bootstrap-select', 'patternfly/bootstrap-select')
+    file = replace_all(file, '../components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css', 'patternfly/bootstrap-touchspin')
     file = replace_all(file, '../components/c3/c3.css', 'c3')
-    file = replace_all(file, '../components/bootstrap-datepicker/less/datepicker3', 'bootstrap-datepicker/bootstrap-datepicker3')
+    file = replace_all(file, '../components/bootstrap-datepicker/less/datepicker3', 'patternfly/bootstrap-datepicker')
 
     sass_contrib('bootstrap-switch/src/less/bootstrap3/bootstrap-switch.less', 'bootstrap-switch.scss')
     file = replace_all(file, '../components/bootstrap-switch/src/less/bootstrap3/bootstrap-switch', 'patternfly/sass-contrib/bootstrap-switch')
